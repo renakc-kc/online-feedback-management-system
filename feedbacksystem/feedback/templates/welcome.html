@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family:Arial, sans-serif;
+            background:#eaf4ff;
+        }
+
+        .header{
+            background:#0d6efd;
+            color:white;
+            padding:20px;
+            text-align:center;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        .container{
+            width:600px;
+            margin:50px auto;
+            background:white;
+            padding:30px;
+            border-radius:10px;
+            box-shadow:0 0 15px rgba(0,0,0,0.2);
+            text-align:center;
+        }
+
+        h2{
+            color:#0d6efd;
+        }
+
+        .btn{
+            display:block;
+            width:250px;
+            margin:15px auto;
+            padding:12px;
+            background:#0d6efd;
+            color:white;
+            text-decoration:none;
+            border-radius:5px;
+            font-size:18px;
+        }
+
+        .btn:hover{
+            background:#084298;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="header">
+    Online Feedback Management System
+</div>
+
+<div class="container">
+
+    <h2>Welcome, {{ student.name }}</h2>
+
+    <a href="/sendfeedback/" class="btn">Send Feedback</a>
+
+    <a href="/myfeedback/" class="btn">My Feedback</a>
+
+    <a href="/login/" class="btn">Logout</a>
+
+</div>
+
+</body>
+</html>
